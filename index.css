@@ -1,0 +1,113 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-image: url(asset/bg.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(5px);
+    border: none;
+    width: 300px;
+    color: white;
+    border-radius: 15px;
+
+}
+
+/* Search bar */
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search input {
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid white;
+    color: white;
+    margin: 0 8px;
+    padding: 2px 2px;
+    width: 49%;
+    outline: none;
+    font-size: 105%;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.514);
+    text-align: center;
+}
+
+
+
+/* Main info */
+.main-info {
+    text-align: center;
+    margin: 70px;
+}
+
+.main-info h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.desc {
+    font-size: 100%;
+    margin: 4px;
+    padding: 0;
+}
+
+.weatherIcon {
+    font-size: 250%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.temp {
+    font-size: 280%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* More info */
+.more-info {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.308);
+    font-size: 90%;
+}
+
+.more-info-left {
+    width: 100%;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.more-info-left span {
+    font-weight: 300;
+}
+
+.more-info-right {
+    width: 100%;
+    font-weight: bold;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.more-info-right span {
+    font-weight: 300;
+
+}
