@@ -24,6 +24,8 @@ function search() {
             icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
 
             // Unix format
+
+            // Sunrise
             let unix_sunrise = data.sys.sunrise;
             var sunrise_date = new Date(unix_sunrise * 1000);
             var sunrise_hours = sunrise_date.getHours();
@@ -32,6 +34,7 @@ function search() {
 
             sunrise.innerHTML = formatted_sunrise + " sáng";
 
+            // Sunset
             let unix_sunset = data.sys.sunset;
             var sunset_date = new Date(unix_sunset * 1000);
             var sunset_hours = sunset_date.getHours();
