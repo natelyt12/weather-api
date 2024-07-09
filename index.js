@@ -45,3 +45,12 @@ function search() {
 
         })
 }
+
+let themebtn = document.getElementsByClassName('change-theme')[0]
+let con = document.getElementsByClassName('container')[0]
+themebtn.addEventListener("click", function () {
+    var body = document.querySelector(".bg-img");
+    var con = document.querySelector(".container");
+    con.classList.toggle("container-changed");
+    body.classList.toggle("changed");
+})

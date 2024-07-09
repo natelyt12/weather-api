@@ -1,14 +1,16 @@
 * {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 body {
     background-image: url(asset/bg.gif);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     margin: 0;
     padding: 0;
+    transition: 0.5s;
 }
 
 .container {
@@ -19,12 +21,15 @@ body {
     background-color: rgba(0, 0, 0, 0.712);
     backdrop-filter: blur(5px);
     border: none;
-    width: 300px;
+    width: 350px;
+    height: 600px;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
 }
 
 /* Search bar */
@@ -38,18 +43,18 @@ body {
 .search input {
     background: none;
     border: none;
-    border-bottom: 1.5px solid white;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.425);
     color: white;
     margin: 0 8px;
     padding: 2px 2px;
-    width: 49%;
+    width: 60%;
     outline: none;
     font-size: 105%;
 }
 
 .search input::placeholder {
     color: rgba(255, 255, 255, 0.514);
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -93,6 +98,8 @@ body {
     border-top: 1.5px solid rgba(255, 255, 255, 0.308);
     font-size: 90%;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .more-info-left {
@@ -115,4 +122,44 @@ body {
 .more-info-right span {
     font-weight: 300;
 
+}
+
+/* Change theme btn */
+.change-theme {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.178);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.change-theme:hover {
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+.change-theme:active {
+    transform: scale(90%);
+}
+
+
+/* Toggle change theme */
+.changed {
+    background-image: url(./asset/bg2.gif);
+}
+
+.container-changed {
+    height: 100%;
+    border-radius: 0;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+@media screen and (max-width: 720px) {
+    .container-changed {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
 }
